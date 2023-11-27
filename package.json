@@ -1,0 +1,17 @@
+{
+  "name": "doubleshift",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fetch.js",
+  "scripts": {
+    "start": "./node_modules/.bin/eleventy --serve",
+    "build": "./node_modules/.bin/eleventy",
+    "fetch": "node --env-file .env ./scripts/fetch.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
