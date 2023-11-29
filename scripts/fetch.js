@@ -36,7 +36,7 @@ const SHOWS = [
 ]
 
 const fetchShow = async (show) => {
-    const actors = await fetch(`https://api.themoviedb.org/3/tv/${show.id}/aggregate_credits?&series_id=1416&language=en-US`, {
+    const actors = await fetch(`https://api.themoviedb.org/3/tv/${show.id}/aggregate_credits?language=en-US`, {
         headers: {
             'Authorization': `Bearer ${process.env.API_KEY}`,
             'accept': 'application/json'
