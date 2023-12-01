@@ -12,6 +12,9 @@ module.exports = async () => {
         chicagohope: 'Chicago Hope',
     }
     const shows = Object.keys(showNames)
+    const options = Object.keys(showNames).map(o => {
+        return { name: showNames[o], value: o }
+    })
     const showData = {}
     const stats = {
         episodes: 0,
@@ -107,6 +110,7 @@ module.exports = async () => {
     })
 
     return {
+        options,
         stats,
         showCount: shows.length,
         leaderboard: {
